@@ -13,7 +13,7 @@ public class UserDaoImpl implements UserDao {
 
 	@Autowired
 	private SessionFactory sessionFactory;
-	
+
 	@Override
 	public void insertUser(User user) {
 		Session session = sessionFactory.getCurrentSession();
@@ -29,7 +29,7 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public void deleteUser(String user_id) {
-		
+
 	}
 
 	@Override

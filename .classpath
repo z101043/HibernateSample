@@ -141,5 +141,5 @@
       <attribute value="jar:file:/C:/Users/ranestar/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/derby/derbyclient/10.8.3.0/derbyclient-10.8.3.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar"/>
 </classpath>
