@@ -2,6 +2,8 @@ package org.hyunkyo.dao;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hyunkyo.domain.User;
@@ -18,7 +20,9 @@ public class UserDaoImpl implements UserDao {
 	public void insertUser(User user) {
 		Session session = sessionFactory.getCurrentSession();
 		session.beginTransaction();
-		sessionFactory.getCurrentSession().save(user);
+		
+		session.save(user);
+		
 		session.getTransaction().commit();
 	}
 

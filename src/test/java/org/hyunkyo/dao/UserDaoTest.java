@@ -19,7 +19,7 @@ public class UserDaoTest {
 	@Test
 	public void test() {
 		
-		User user = new User("z101043", "김양헌", "z101043@naver.com", new Date());
+		User user = new User("z101043a", "김양헌", "z101043@naver.com", new Date());
 		userDao.insertUser(user);
 		
 		//assertTrue(Boolean.TRUE);

@@ -5,8 +5,11 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- sql문 보기 -->
 		<property name="show_sql">true</property>
+		<!-- table 자동생성
 		<property name="hbm2ddl.auto">create</property>
+		-->
 		<property name="hibernate.connection.release_mode">after_transaction</property>
 		<!-- Enable Hibernate's current session context -->
 		<property name="current_session_context_class">thread</property>
@@ -14,8 +17,8 @@
 		<!-- Disable the second-level cache -->
 		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
 		
+        <!-- packagesToScan을 안할 경우 도메인 객체 매핑, xml 매핑도 가능
         <mapping class="org.hyunkyo.domain.User" />
-        
-        
+        -->
 	</session-factory>
 </hibernate-configuration>
