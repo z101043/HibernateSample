@@ -14,7 +14,7 @@ public interface UserDao {
 
 	public User getByUserId(String user_id);
 
-	public int getUserCnt();
+	public Long getUserCnt();
 
 	public List<User> getUserList();
 

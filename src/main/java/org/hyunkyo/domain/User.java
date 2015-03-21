@@ -63,4 +63,49 @@ public class User {
 				+ "]";
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((email == null) ? 0 : email.hashCode());
+		result = prime * result + ((reg_date == null) ? 0 : reg_date.hashCode());
+		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
+		result = prime * result + ((user_nm == null) ? 0 : user_nm.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
+			return false;
+		if (reg_date == null) {
+			if (other.reg_date != null)
+				return false;
+		} else if (!reg_date.equals(other.reg_date))
+			return false;
+		if (user_id == null) {
+			if (other.user_id != null)
+				return false;
+		} else if (!user_id.equals(other.user_id))
+			return false;
+		if (user_nm == null) {
+			if (other.user_nm != null)
+				return false;
+		} else if (!user_nm.equals(other.user_nm))
+			return false;
+		return true;
+	}
+
+	
+	
 }
